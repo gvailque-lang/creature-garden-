@@ -1,0 +1,49 @@
+#creature-form div {
+    margin-bottom: 10px;
+}
+
+/* Each creature in the list gets spacing and is centered */
+#creature-list > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Creature body box */
+.creature-body {
+    background: pink;      /* Will be replaced by chosen color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+
+    /* 🌟 Fun Bounce Animation */
+    animation: bounce 1.8s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Eyes */
+.eye {
+    height: 18px;
+    width: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: #fff;
+}
+
+/* Creature name text */
+.creature-info {
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
